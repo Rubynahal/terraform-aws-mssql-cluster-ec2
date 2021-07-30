@@ -53,7 +53,7 @@ data "template_file" "ssmautomation" {
   vars = {
     documentname                    = "${var.prefix}-aws-quickstart.mssql"
     SQLServerVersion                = var.sql_server_version
-    SQLLicenseProvided              = var.sql_license_provided
+    SQLLicenseProvided              = var.aws_sql_license
     WSFCNode1NetBIOSName            = var.wsfc_node1_netbios_name
     WSFCNode1PrivateIP1             = tolist(data.aws_network_interface.node1.private_ips)[0]
     WSFCNode1PrivateIP2             = tolist(data.aws_network_interface.node1.private_ips)[1]

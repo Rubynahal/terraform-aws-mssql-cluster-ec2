@@ -151,7 +151,7 @@ variable "qs_s3_key_prefix"{
     type          = string 
 }
 
-variable "sql_license_provided" {
+variable "aws_sql_license" {
     description   = "License SQL Server from AWS Marketplace."
     default       = null
 }
